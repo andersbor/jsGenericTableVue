@@ -1,4 +1,5 @@
-const baseUrl = "http://jsonplaceholder.typicode.com/posts"
+const baseUrl = "https://anbo-restbookquerystring.azurewebsites.net/api/books"
+//const baseUrl = "http://jsonplaceholder.typicode.com/posts"
 //const baseUrl = "http://jsonplaceholder.typicode.com/users" 
 
 // Should work with any REST GET url that returns an array of objects

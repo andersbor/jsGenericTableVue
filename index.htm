@@ -15,7 +15,7 @@
 <body>
     <h1>Generic table</h1>
     <div id="app">
-        <table class="table table-striped table-bordered table-hover">
+        <table v-if="data.length > 0" class="table table-striped table-bordered table-hover">
             <tr>
                 <th v-for="(value,name) in data[0]">{{name}}</th>
                 <!-- Pick attribute names from first row in data -->
@@ -25,7 +25,10 @@
                 <!-- nothing said about attribute names in data -->
             </tr>
         </table>
+        <div v-else>No data ...</div>
+        {{message}}
     </div>
+
     <script src="js/index.js"></script>
 </body>
 
