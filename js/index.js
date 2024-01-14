@@ -1,4 +1,5 @@
-const baseUrl = "https://anbo-restbookquerystring.azurewebsites.net/api/books"
+const baseUrl = "https://anbo-restcarswithmanager.azurewebsites.net/api/cars"
+//"https://anbo-restbookquerystring.azurewebsites.net/api/books"
 //const baseUrl = "http://jsonplaceholder.typicode.com/posts"
 //const baseUrl = "http://jsonplaceholder.typicode.com/users" 
 
@@ -12,11 +13,11 @@ Vue.createApp({
         }
     },
     async created() {
-       try {
-           const response = await axios.get(baseUrl)
-           this.data = await response.data
-       } catch (error) {
-           this.message = error.message
-       }  
+        try {
+            const response = await axios.get(baseUrl)
+            this.data = await response.data
+        } catch (error) {
+            this.message = error.message
+        }
     }
 }).mount("#app")
